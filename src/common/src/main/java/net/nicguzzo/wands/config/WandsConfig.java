@@ -44,8 +44,8 @@ public class WandsConfig {
 	static public int def_stone_wand_limit = 16;
 	static public int def_iron_wand_limit = 32;
 	static public int def_diamond_wand_limit = 64;
-	static public int def_netherite_wand_limit = 256;
-	static public int def_creative_wand_limit = 512;
+	static public int def_netherite_wand_limit = 1024;
+	static public int def_creative_wand_limit = 2048;
 	static public int def_stone_wand_durability = 256;
 	static public int def_iron_wand_durability = 512;
 	static public int def_diamond_wand_durability = 2048;
