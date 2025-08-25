@@ -19,8 +19,13 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
 
-    - name: Make build script executable
-      run: chmod +x ./build.sh
+    - name: Make scripts executable
+      run: |
+        chmod +x ./make_links.sh
+        chmod +x ./build.sh
+
+    - name: Set up project structure
+      run: ./make_links.sh 1.20.1
 
     - name: Run build script for 1.20.1
       run: ./build.sh 1.20.1
