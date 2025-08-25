@@ -28,9 +28,9 @@ repositories {
         url "https://cursemaven.com"
     }
     maven {
-        url "https://maven.saps.dev/minecraft"
+        url "https://cursemaven.com"
         content {
-            includeGroup "dev.ftb.mods"
+            includeGroup "curse.maven"
         }
     }
     maven {
@@ -59,8 +59,8 @@ dependencies {
     modCompileOnly("curse.maven:get-off-my-lawn-reserved-572651:${rootProject.goml_fabric_cursmaven_fileid}")
     modCompileOnly("com.jamieswhiteshirt:rtree-3i-lite-fabric:${project.rtree_version}")
     modCompileOnly("curse.maven:flan-404578:${rootProject.flan_fabric_cursmaven_fileid}") { transitive = false }
-    modCompileOnly("dev.ftb.mods:ftb-library-fabric:${rootProject.ftblibrary_version}") { transitive = false }
-    modCompileOnly("dev.ftb.mods:ftb-chunks-fabric:${rootProject.ftbchunks_version}") { transitive = false }
+    modCompileOnly(""curse.maven:ftb-library-fabric-438495:6807422") { transitive = false }
+    modCompileOnly("curse.maven:ftb-chunks-fabric-472657:6431734") { transitive = false }
 
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionFabric")) { transitive false }
