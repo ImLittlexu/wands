@@ -23,7 +23,7 @@ jobs:
       run: |
         chmod +x ./make_links.sh
         chmod +x ./build.sh
-        chmod +x ./gradlew
+        chmod +x ./src/gradlew
 
     - name: Set up project structure
       run: ./make_links.sh 1.20.1
