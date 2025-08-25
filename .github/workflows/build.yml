@@ -26,7 +26,7 @@ jobs:
       run: ./build.sh 1.20.1
 
     - name: Upload Artifacts for 1.20.1
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: compiled-mods-1.20.1
         path: |
